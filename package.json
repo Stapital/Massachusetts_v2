@@ -1,6 +1,6 @@
 {
   "name": "Massachusetts_v2",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "Theme for Shoporama",
   "main": "gulpfile.js",
   "dependencies": {
