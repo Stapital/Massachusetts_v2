@@ -12,9 +12,16 @@ $(function () {
     massachusetts.cookiepolicy.init();
     massachusetts.newsletterpopup.init();
 
+  
+
+    $('body').animate({ scrollTop: 0 }, callback);
+
     // To top scroller
     $('#totop').click(function () {
-        $('html,body').animate({scrollTop: 0}, 'fast');
+          if ($('html').scrollTop()) {
+        $('html').animate({ scrollTop: 0 }, callback);
+        return;
+    }
     });
 
     // Basket tooltip
