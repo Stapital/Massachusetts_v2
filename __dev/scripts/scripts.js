@@ -12,6 +12,15 @@ $(function () {
     massachusetts.cookiepolicy.init();
     massachusetts.newsletterpopup.init();
 
+
+    function scrollToTop(callback) {
+    if ($('html').scrollTop()) {
+        $('html').animate({ scrollTop: 0 }, callback);
+        return;
+    }
+
+    $('body').animate({ scrollTop: 0 }, callback);
+        };
   
 
     $('body').animate({ scrollTop: 0 }, callback);
