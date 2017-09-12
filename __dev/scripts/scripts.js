@@ -18,10 +18,14 @@ $(function () {
 
     // To top scroller
     $('#totop').click(function () {
-          if ($('html').scrollTop()) {
-        $('html').animate({ scrollTop: 0 }, callback);
-        return;
-    }
+     $("a[href='#top']").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, "1");              
+          $('html, body').stop(true, true);
+
+          //Anything else you want to do in the same action goes here
+
+          return false;                              
+      });
     });
 
     // Basket tooltip
