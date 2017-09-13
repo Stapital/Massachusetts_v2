@@ -142,7 +142,8 @@
                         <div id="form-checks">
                             <div class="checkbox" style="clear:both">
                                 <label class="checkboxlabel">
-                                    <input type="checkbox" name="mailinglist" id="mailinglist" value="1"/> <{$settings.CheckoutFlow.AddressTilmeldNyhedsbrevTekst|default:"Ja, tak, tilmeld mig nyhedsbrevet"}>
+                                    <!--<input type="checkbox" name="mailinglist" id="mailinglist" value="1"/> <{$settings.CheckoutFlow.AddressTilmeldNyhedsbrevTekst|default:"Ja, tak, tilmeld mig nyhedsbrevet"}>-->                                   
+                                    <input type="checkbox" name="extra[mailinglist_tilmeldt]" value="1"/> <{$settings.CheckoutFlow.AddressTilmeldNyhedsbrevTekst|default:"Ja, tak, tilmeld mig nyhedsbrevet"}>
                                 </label>
                             </div>
                             <div class="checkbox" id="terms_accept_container" style="clear:both">
