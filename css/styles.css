@@ -5395,7 +5395,7 @@ body.toggled-sitenav #sitenav li._active a {
   right: 20px;
   text-align: center;
   top: 15px;
-  width: 50px;
+  width: 750px;
 }
 @media (min-width: 992px) {
   #basket-toggler {
