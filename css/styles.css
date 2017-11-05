@@ -5424,7 +5424,7 @@ body.toggled-sitenav #sitenav li._active a {
   right: -10px;
   text-align: center;
   top: -10px;
-  width: 24px;
+  width: 34px;
 }
 #basket-toggler.cartempty:after {
   display: none;
