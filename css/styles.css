@@ -6308,7 +6308,6 @@ body.toggled-basket #basket {
   overflow: hidden;
   position: relative;
   text-align: center;
-  height: 10px;
   z-index: 0;
 }
 #brandidentity iframe {
@@ -6327,7 +6326,7 @@ body.toggled-basket #basket {
 @media (min-width: 768px) {
   #brandidentity h1 {
     font-size: 35px;
-    margin: 200px 20px 0 20px;
+    margin: 50px 20px 0 20px;
   }
 }
 #brandidentity h1:after {
@@ -6351,7 +6350,7 @@ body.toggled-basket #basket {
 }
 @media (min-width: 768px) {
   #brandidentity {
-    min-height: 500px;
+    min-height: 300px;
   }
 }
 #brandidentity #brandidentity-overlay {
