@@ -15,7 +15,7 @@
     <div id="sitecontent">
 
         <{if $settings.forside.Forsidebillede}>
-        <section id="brandidentity" style="background-image: url(<{$settings.forside.Forsidebillede->getSrc(1000, 1000, 'fit')}>);">
+        <section id="brandidentity" style="background-image: url(<{$settings.forside.Forsidebillede->getSrc(1000, 500, 'fit')}>);">
             <div id="brandidentity-overlay" style="background-color:<{$settings.forside.Overlayfarve|escape|default:'#FFFFFF'}>;opacity:<{$settings.forside.Overlaygennemsigtighed|escape|default:0}>;"></div>
             <div id="brandidentity-content">
                 <{if $settings.forside.Forsidebilledtekst}><h1 style="color:<{$settings.forside.Tekstfarve|escape|default:'#FFFFFF'}>;"><{$settings.forside.Forsidebilledtekst}></h1><{/if}>
