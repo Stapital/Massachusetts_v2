@@ -6304,10 +6304,11 @@ body.toggled-basket #basket {
   background-position: center center;
   background-size: cover;
   box-sizing: border-box;
-  min-height: 100px;
+  min-height: 350px;
   overflow: hidden;
   position: relative;
   text-align: center;
+  height: 10px;
   z-index: 0;
 }
 #brandidentity iframe {
