@@ -86,7 +86,10 @@
                     <{if $product->getIsInStock()}>
                         <span class="product-teaser-availability instock" >På lager</span>
                         <link itemprop="availability" href="http://schema.org/InStock" />
-                    <{else}>
+                    <{elseifif $product=>getAllowNegativeStock()}
+                        <span class="product-teaser-availability instock" >På fjernlager</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    <{else}
                         <span class="product-teaser-availability outofstock">Ikke på lager</span>
                     <{/if}>
                 </div>
