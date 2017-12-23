@@ -85,11 +85,11 @@
                     </div>
                     <{if $product->getIsInStock()}>
                         <span class="product-teaser-availability instock" >På lager</span>
-                        <span class="product-teaser-availability" ><{$product->getDeliveryTime()}</span>
+                        <span class="product-teaser-availability" ><{$product->getDeliveryTime()}> dages leveringstid</span>
                         <link itemprop="availability" href="http://schema.org/InStock" />
                     <{elseif !$product->getIsInStock() && $product->getStockCount() == 0 && $product->getAllowNegativeStock()}>
                         <span class="product-teaser-availability instock" >På fjernlager</span>
-                        span class="product-teaser-availability" ><{$product->getDeliveryTime()}</span>
+                        span class="product-teaser-availability" ><{$product->getDeliveryTime()}> dages leveringstid</span>
                         <link itemprop="availability" href="http://schema.org/InStock" />
                     <{else}>
                         <span class="product-teaser-availability outofstock">Ikke på lager</span>
