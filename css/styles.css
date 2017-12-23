@@ -5844,6 +5844,13 @@ body.toggled-basket #basket {
   font-size: 70%;
   margin-right: 5px;
 }
+.product-teaser .product-teaser-inner a .product-teaser-meta .product-teaser-price .product-teaser-availability.delevery:before {
+  color: #507502;
+  content: "\e108";
+  font-family: 'Glyphicons Halflings';
+  font-size: 70%;
+  margin-right: 5px;
+}
 .product-teaser .product-teaser-inner a .product-teaser-meta .product-teaser-price .product-teaser-availability.outofstock:before {
   color: grey;
   content: "\e014";
