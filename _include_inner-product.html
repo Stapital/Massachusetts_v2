@@ -83,14 +83,13 @@
                     <div class="product-teaser-price-current">
                         <span itemprop="priceCurrency" class="product-teaser-currency"><{$webshop->getCurrency()}></span>&nbsp;<span itemprop="price" class="product-teaser-price" content="<{$product->getRealPrice()|number_format:2:".":""}>"><{$product->getRealPrice()|number_format:2:",":"."}></span>
                     </div>
-                    <{if $product->getIsInStock()}>
+                    <{if $product->getIsInStock(}>
                         <span class="product-teaser-availability instock" >På lager</span>
                         <link itemprop="availability" href="http://schema.org/InStock" />
-                    <{if $product->getAllowNegativeStock() && $product->getStockCount() == 0}>
-                        <span class="product-teaser-availability instock" >På fjernlager <{$product->getStockCount()}></span>
+                    <{elseif $product->getAllowNegativeStock() && $product->getStockCount() == 0}>
+                        <span class="product-teaser-availability instock" >På fjernlager</span>
                     <{else}>    
                         <span class="product-teaser-availability outofstock">Ikke på lager</span>
-                    <{/if}>
                     <{/if}>
                 </div>
             </div>
