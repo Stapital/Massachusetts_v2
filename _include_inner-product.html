@@ -87,7 +87,7 @@
                         <span class="product-teaser-availability instock" >På lager</span>
                         <link itemprop="availability" href="http://schema.org/InStock" />
                     <{/if}>
-                    <{if $product->getAllowNegativeStock() && $product->getStockCount() < 1}>
+                    <{if $product->getAllowNegativeStock() && $product->getStockCount() > 12}>
                         <span class="product-teaser-availability instock" >På fjernlager <{$product->getStockCount()}></span>
                     <{else}>
                         <span class="product-teaser-availability outofstock">Ikke på lager</span>
