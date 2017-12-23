@@ -2,7 +2,7 @@
 <{assign var="profile" value=$product->getProfile()}>
 <{assign var="attr" value=$profile->getAttributeList()}>
 
-<{if $product->getIsInStock() || $product->hasBundleProducts()}>
+<{if $product->getIsInStock() || $product->hasBundleProducts() || $product->getAllowNegativeStock()}>
     <form action="" method="post" id="putinbasketform">
         <input type="hidden" name="product_id" value="<{$product->getProductId()}>"/>
         <input type="hidden" name="redirect" value="<{$product->getMetaValue('redirect')|escape}>"/>
