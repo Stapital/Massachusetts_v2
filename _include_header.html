@@ -26,7 +26,7 @@
 
         </div>
         <{if $basket}>
-        <button id="basket-toggler" class="glyphicon glyphicon-shopping-cart cartfull" data-quantity-count="<{$total_amount}>" data-toggle="tooltip" data-placement="bottom" title="<{$webshop->getCurrency()}> <{$total_price|number_format:2:",":"."}> inkl. fragt"><font size="2"><{$total_price|number_format:2:",":"."}></font></button><{else}>
+        <button id="basket-toggler" class="glyphicon glyphicon-shopping-cart cartfull" data-quantity-count="<{$total_amount}>" data-toggle="tooltip" data-placement="bottom" title="<{$webshop->getCurrency()}> <{$total_price|number_format:2:",":"."}> inkl. fragt"><font size="2"></font></button><{else}>
             <button id="basket-toggler" class="glyphicon glyphicon-shopping-cart" data-quantity-count="" data-toggle="tooltip" data-placement="bottom" title="Kurven er tom"></button>
         <{/if}>
 
