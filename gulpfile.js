@@ -74,4 +74,4 @@ gulp.task('build-js', function() {
         .pipe(gulp.dest('./js/'));
 });
 
-gulp.task('default', ['less', 'watch']);
+gulp.task('default', ['less', 'watch', 'build-js']);

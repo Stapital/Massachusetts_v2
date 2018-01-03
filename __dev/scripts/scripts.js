@@ -12,29 +12,9 @@ $(function () {
     massachusetts.cookiepolicy.init();
     massachusetts.newsletterpopup.init();
 
-
-    function scrollToTop(callback) {
-    if ($('html').scrollTop()) {
-        $('html').animate({ scrollTop: 0 }, callback);
-        return;
-    }
-
-    $('body').animate({ scrollTop: 0 }, callback);
-        };
-  
-
-    $('body').animate({ scrollTop: 0 }, callback);
-
     // To top scroller
     $('#totop').click(function () {
-     $("a[href='#top']").click(function() {
-          $("html, body").animate({ scrollTop: 0 }, "1");              
-          $('html, body').stop(true, true);
-
-          //Anything else you want to do in the same action goes here
-
-          return false;                              
-      });
+        $('html,body').animate({scrollTop: 0}, 'fast');
     });
 
     // Basket tooltip
