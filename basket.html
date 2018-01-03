@@ -39,6 +39,7 @@
                                                 <{/foreach}>
                                             </div>
                                         <{/if}>
+                                        <!--
                                         <{if !$basket[i].in_stock}>
                                             <{if $attributes}>
                                                 <{assign var="stock_count" value=$product->getInStock($attributes[0].id, $attributes[0].value_id)}>
@@ -51,6 +52,7 @@
                                                 <div class="basket-content-listitem-stockinfo outofstock">Denne vare er ikke længere på lager</div>
                                             <{/if}>
                                         <{/if}>
+                                        -->
                                     </a>
                                     <{if $product->hasBundleProducts()}>
                                         <{assign var="bundle" value=$product->getBundleProducts()}>
