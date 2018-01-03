@@ -2896,8 +2896,8 @@ massachusetts.validator = massachusetts.validator || function () {
         if ($('#single-stock-amount').length > 0) {
             $('.putinbasket').click(function() {
                 if (Number($('#amount-input').val()) > Number($('#single-stock-amount').val())) {
-                    alert('Vi har desværre ikke så mange på lager af denne vare');
-                    return false;
+                    //alert('Vi har desværre ikke så mange på lager af denne vare');
+                    //return false;
                 }
             });
         }
