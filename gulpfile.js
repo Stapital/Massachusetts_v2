@@ -55,6 +55,7 @@ gulp.task('build-js', function() {
         "__dev/scripts/libs/owl/owl.carousel.min.js",
         "__dev/scripts/libs/_jquery.scrolllock.js",
         "__dev/scripts/libs/layzr.js",
+        "__dev/scripts/libs/bootstrap-notify.min.js",
         "__dev/scripts/libs/_jquery.autocompleter.shoporama-custom.js",
         "__dev/scripts/bootstrap/_tooltip.js",
         "__dev/scripts/components/_massachusetts.general.js",
