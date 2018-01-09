@@ -2900,7 +2900,17 @@ massachusetts.validator = massachusetts.validator || function () {
                //     alert('Vi har desværre ikke så mange på lager af denne vare');
                //     return false;
                // }
-               $.notify("Produktet er lagt i urven");
+               $.notify({
+                title: '<strong>Produktet er lagt i kurven!</strong>',
+                message: 'Shop endelig videre - kurven venter gerne på flere produkter :)'
+                },{
+                type: 'success'
+                },{
+                animate: {
+                    enter: 'animated fadeInRight',
+                    exit: 'animated fadeOutRight'
+                    }
+                });
             });
         }
     }
