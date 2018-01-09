@@ -27,7 +27,8 @@ massachusetts.validator = massachusetts.validator || function () {
                 title: '<strong>Produktet er lagt i kurven!</strong>',
                 message: 'Shop endelig videre - kurven venter gerne på flere produkter :)'
                 },{
-                type: 'success'
+                type: 'success',
+                delay: 5000,
                 },{
                 animate: {
                     enter: 'animated fadeInRight',
