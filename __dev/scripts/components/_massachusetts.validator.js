@@ -34,7 +34,8 @@ massachusetts.validator = massachusetts.validator || function () {
                     enter: 'animated fadeInRight',
                     exit: 'animated fadeOutRight'
                     }
-                });
+                },5000);
+                
             });
         }
     }
